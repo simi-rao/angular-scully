@@ -42,11 +42,14 @@ ng add @scullyio/init
 
 ng build && npm run scully
 
-ng g @scullyio/blog
+ng g @scullyio/init:blog
 
 ng g @scullyio/init:post --name="First post"
 
+git commands
+--------------
 …or create a new repository on the command line
+-------------------------------------------------
 echo "# angular-scully" >> README.md
 git init
 git add README.md
@@ -56,15 +59,21 @@ git remote add origin https://github.com/simi-rao/angular-scully.git
 git push -u origin main
 
 …or push an existing repository from the command line
+-----------------------------------------------------
 git remote add origin https://github.com/simi-rao/angular-scully.git
 git branch -M main
 git push -u origin main
 
 enable netlify from local
-
+-------------------------
 npm install netlify-cli -g
+
 netlify.toml
+
 netlify init
+
 ntl open
 
+not required
+-------------
 npm i chrome-aws-lambda puppeteer-core
