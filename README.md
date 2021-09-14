@@ -25,3 +25,44 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Command usage
+
+npm i -g @angular/cli
+
+npm i -g @angular/cli@next
+
+ng new <--workspace name-->
+
+ng g m home --route home --module app.module.ts
+
+ng g m blog --route blog --module app.module.ts
+
+ng add @scullyio/init
+
+ng build && npm run scully
+
+ng g @scullyio/blog
+
+ng g @scullyio/init:post --name="First post"
+
+…or create a new repository on the command line
+echo "# angular-scully" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/simi-rao/angular-scully.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/simi-rao/angular-scully.git
+git branch -M main
+git push -u origin main
+
+enable netlify from local
+
+npm install netlify-cli -g
+netlify.toml
+netlify init
+ntl open
