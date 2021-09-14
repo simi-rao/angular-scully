@@ -66,3 +66,5 @@ npm install netlify-cli -g
 netlify.toml
 netlify init
 ntl open
+
+npm i chrome-aws-lambda puppeteer-core
