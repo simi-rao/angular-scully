@@ -6,7 +6,16 @@ import {BlogComponent} from './blog.component';
 const routes: Routes = [
   {
     path: ':slug',
-    component: BlogComponent,
+    component: BlogComponent
+  },
+  {
+    path: '',
+    loadChildren: () =>
+      import('../blog-root/blog-root.module').then(m => m.BlogRootModule)
+  },
+  {
+    path: '**',
+    component: BlogComponent
   }
 ];
 

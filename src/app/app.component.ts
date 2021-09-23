@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ScullyRoutesService } from '@scullyio/ng-lib';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,5 @@ import { ScullyRoutesService } from '@scullyio/ng-lib';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(public scully: ScullyRoutesService){
-
-  }
+  constructor(public router: Router){}
 }
